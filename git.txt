@@ -8,11 +8,11 @@ add,commit,pull( to take pull from branch if any other team member had pushed th
 
 
 we have added files to staging but if we want to remove a file from staging back to working directory then we use git status to know what next,
-git reset HEAD filename
+git reset HEAD filename ## Unstages the changes for a specific file
 
 if we need to go back to previous commit ie discarding recently made changes needs to be discareded then use git status to know what next,
 (to discard chnages in working directory)
-git checkout -- filename
+git checkout -- filename # Reverts the changes for a specific file to the last committed state
 
 moving within directory:
 to rename filename in git,
