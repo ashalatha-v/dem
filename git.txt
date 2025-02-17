@@ -13,3 +13,12 @@ git reset HEAD filename
 if we need to go back to previous commit ie discarding recently made changes needs to be discareded then use git status to know what next,
 (to discard chnages in working directory)
 git checkout -- filename
+
+
+to rename filename in git,
+git mv currentfilename newfilename (git level changing)-- git understands renaming is done
+
+os level to rename without git, so it is bash command
+mv currentfilename new filename----here git understands as old file is deleted and new file is added
+
+git add -A (add all changes to staging area)
