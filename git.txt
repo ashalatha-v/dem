@@ -1,0 +1,8 @@
+to create parent directory,with nested folder inside parent directory we use,
+mkdir -p parent/child/grandchild folder names
+
+to recursively add multiples files to staging we use,
+git add .
+
+add,commit,pull( to take pull from branch if any other team member had pushed their code) and push
+
