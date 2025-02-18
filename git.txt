@@ -32,3 +32,22 @@ git rm filename.extension gives error as this filename is not yet staged,so we n
 rm filename
 
 mkdir -p parent/child/grandchild creates directories
+
+git add -A: Stages all changes in the repository (modifications, new files, and deletions).
+
+git add .: Stages changes in the current directory and its subdirectories (modifications and new files, but not deletions).
+
+
+git alias::
+
+global alias:
+git config --global alias.aliasname 'gitcommand'
+
+ex: git config --global alias.co 'checkout'
+
+above command can be accessed as git co
+
+local alias:
+git config alais.aliasname 'gitcommand'
+
+git ignorne(ignoring unwanted files)
