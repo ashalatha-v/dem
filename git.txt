@@ -77,3 +77,21 @@ git diff -- filename/path
 difference between current and last commit
 first need to get commit log ie git log --oneline 
 then git diff commit1 commit2
+
+---to find differrnces b/w 2 branches
+
+git diff master  origin/master
+local rep         remote repo
+master(HEAD)      origin/master(github)
+
+create new branch
+git branch branchname
+git checkout branchname
+git branch -a to lit all branches
+git log --oneline --decorate -- to get logs in oneline and decorate means giving info about branch and its tags
+renaming branchnames: git branch -m oldfilename newfilename
+
+delete a branch: git branch -d branchname
+
+creating and checking out to branch at a time in acommand
+git checkout -b branchname
