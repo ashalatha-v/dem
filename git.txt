@@ -1,0 +1,104 @@
+to create parent directory,with nested folder inside parent directory we use,
+mkdir -p parent/child/grandchild folder names
+
+to recursively add multiples files to staging we use,
+git add .
+
+add,commit,pull( to take pull from branch if any other team member had pushed their code) and push
+
+
+we have added files to staging but if we want to remove a file from staging back to working directory then we use git status to know what next,
+git reset HEAD filename ## Unstages the changes for a specific file
+
+if we need to go back to previous commit ie discarding recently made changes needs to be discareded then use git status to know what next,
+(to discard chnages in working directory)
+git checkout -- filename # Reverts the changes for a specific file to the last committed state
+
+moving within directory:
+to rename filename in git,
+git mv currentfilename newfilename (git level changing)-- git understands renaming is done
+
+os level to rename without git, so it is bash command
+mv currentfilename new filename----here git understands as old file is deleted and new file is added
+
+git add -A (add all changes(renamed,moved files etc) to staging area)
+
+moving outside directory
+git mv currentfilename path(directoryname)
+
+deleting files in git:
+to delete files which are not in staging ie not tracked by git yet
+git rm filename.extension gives error as this filename is not yet staged,so we need to use bash command ie
+rm filename
+
+mkdir -p parent/child/grandchild creates directories
+
+git add -A: Stages all changes in the repository (modifications, new files, and deletions).
+
+git add .: Stages changes in the current directory and its subdirectories (modifications and new files, but not deletions).
+
+
+git alias::
+
+global alias:
+git config --global alias.aliasname 'gitcommand'
+
+ex: git config --global alias.co 'checkout'
+
+above command can be accessed as git co
+
+local alias:
+git config alais.aliasname 'gitcommand'
+
+git ignorne(ignoring unwanted files):
+in order to avoid unwanted files we need to check if .gitignore file is avaiable in working directory or not.
+if not create .gitignore
+--add 1 expression per line.it can be:
+1. specific file: myfile.extension
+2. file pattern: *.extension
+3.folder: myfolder/
+
+
+--lets say we log files multiple to exclude them in .gitignore file we can use *.log
+-- or we can store log files inside log folder and ignore that folder completely by specifying log folder in .gitignore
+
+
+git diff without any paramter gives difference between working directory and staging area.(This command shows the changes that have been made but not yet staged for commit.)
+git diff --staged To compare the staging area with the last commit, use:
+(This command displays the changes that have been staged but not yet committed.)
+
+git diff HEAD: This command shows the differences between your working directory (uncommitted changes) and the last commit or local repo(HEAD).
+
+git diff --staged HEAD--- shows in staging area but not commited ie local repo
+
+to limit to show differrnces in only one file then,
+git diff -- filename/path
+
+difference between current and last commit
+first need to get commit log ie git log --oneline 
+then git diff commit1 commit2
+
+---to find differrnces b/w 2 branches
+
+git diff master  origin/master
+local rep         remote repo
+master(HEAD)      origin/master(github)
+
+create new branch
+git branch branchname
+git checkout branchname
+git branch -a to lit all branches
+git log --oneline --decorate -- to get logs in oneline and decorate means giving info about branch and its tags
+renaming branchnames: git branch -m oldfilename newfilename
+
+delete a branch: git branch -d branchname
+
+creating and checking out to branch at a time in acommand
+git checkout -b branchname
+
+being in main branch,
+git diff main feature2
+it shows changes in feature3 branch compared to main branch.
+
+git merge branchname---
+if we r in feature2 branch,it will merge changes into branchname mentioned
