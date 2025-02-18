@@ -95,3 +95,10 @@ delete a branch: git branch -d branchname
 
 creating and checking out to branch at a time in acommand
 git checkout -b branchname
+
+being in main branch,
+git diff main feature2
+it shows changes in feature2 branch compared to main branch.
+
+git merge branchname---
+if we r in feature2 branch,it will merge changes into branchname mentioned
