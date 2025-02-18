@@ -50,4 +50,14 @@ above command can be accessed as git co
 local alias:
 git config alais.aliasname 'gitcommand'
 
-git ignorne(ignoring unwanted files)
+git ignorne(ignoring unwanted files):
+in order to avoid unwanted files we need to check if .gitignore file is avaiable in working directory or not.
+if not create .gitignore
+--add 1 expression per line.it can be:
+1. specific file: myfile.extension
+2. file pattern: *.extension
+3.folder: myfolder/
+
+
+--lets say we log files multiple to exclude them in .gitignore file we can use *.log
+
