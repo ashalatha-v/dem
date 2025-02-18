@@ -60,4 +60,20 @@ if not create .gitignore
 
 
 --lets say we log files multiple to exclude them in .gitignore file we can use *.log
+-- or we can store log files inside log folder and ignore that folder completely by specifying log folder in .gitignore
 
+
+git diff without any paramter gives difference between working directory and staging area.(This command shows the changes that have been made but not yet staged for commit.)
+git diff --staged To compare the staging area with the last commit, use:
+(This command displays the changes that have been staged but not yet committed.)
+
+git diff HEAD: This command shows the differences between your working directory (uncommitted changes) and the last commit or local repo(HEAD).
+
+git diff --staged HEAD--- shows in staging area but not commited ie local repo
+
+to limit to show differrnces in only one file then,
+git diff -- filename/path
+
+difference between current and last commit
+first need to get commit log ie git log --oneline 
+then git diff commit1 commit2
