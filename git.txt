@@ -101,4 +101,4 @@ git diff main feature2
 it shows changes in feature2 branch compared to main branch.
 
 git merge branchname---
-if we r in feature2 branch,it will merge changes into branchname mentioned
+if we r in feature2 branch,it will merge changes into branchname mentioned.
