@@ -98,7 +98,12 @@ git checkout -b branchname
 
 being in main branch,
 git diff main feature2
-it shows changes in feature2 branch compared to main branch.
+it shows changes in feature3 branch compared to main branch.
 
 git merge branchname---
-if we r in feature2 branch,it will merge changes into branchname mentioned.
+if we r in feature2 branch,it will merge changes into branchname mentioned
+
+git merge branchname does the fastforward merge 
+meaning that only information about last commit of branchname will be mentioned.
+
+git merge branchname --no-ff meaning that along witb last commit of branchname and merge commit of branchanme is also maintained with commit.
