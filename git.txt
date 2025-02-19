@@ -107,3 +107,6 @@ git merge branchname does the fastforward merge
 meaning that only information about last commit of branchname will be mentioned.
 
 git merge branchname --no-ff meaning that along witb last commit of branchname and merge commit of branchanme is also maintained with commit.
+
+git merge using recursive strategy:
+git merge branchname -m "message"
