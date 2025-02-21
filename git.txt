@@ -108,5 +108,6 @@ meaning that only information about last commit of branchname will be mentioned.
 
 git merge branchname --no-ff meaning that along witb last commit of branchname and merge commit of branchanme is also maintained with commit.
 
+lets say we r in main branch
 git merge using recursive strategy:
-git merge branchname -m "message"
+git merge branchname -m "message" meaning that recursively merge happens with changes commkted in main and new branch 
