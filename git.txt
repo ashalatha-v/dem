@@ -116,4 +116,6 @@ git merge using recursive strategy:
 git merge branchname -m "message" meaning that recursively merge happens with changes commkted in main and new branch 
 automatically the merge commit happens with commit message.
 when our branch has changes(simple-changes)branch and some other developer make chnages in the branch we prefer to merge(main) 
-then automatic merge happens
+then automatic merge happens...
+adding few more content
+
