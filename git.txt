@@ -112,13 +112,17 @@ meaning that only information about last commit of branchname will be mentioned.
 git merge branchname --no-ff meaning that along witb last commit of branchname and merge commit of branchanme is also maintained with commit.
 
 lets say we r in main branch---automatically merge 
-git merge using recursive strategy(recently named as ort startegy):
-ort -- Ostensibly Recursive’s Twin"
-
+git merge using recursive strategy(recently it named as ort strategy):
+ort -- Ostensibly Recursive’s Twin":
 git merge branchname -m "message" meaning that recursively merge happens with changes commkted in main and new branch 
 automatically the merge commit happens with commit message.
 when our branch has changes(simple-changes)branch and some other developer make chnages in the branch we prefer to merge(main) 
-then automatic merge happens...
+then automatic merge happens
+
+for merge conflicts,mergetool p4merge is better 3way merge tool
+
+REBASE topic:
+...
 adding few more content
 
 REBASING:
