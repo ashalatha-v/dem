@@ -93,6 +93,9 @@ renaming branchnames: git branch -m oldfilename newfilename
 
 delete a branch: git branch -d branchname
 
+to delete branch from git command line:
+git push -d origin branchnametodelete
+
 creating and checking out to branch at a time in acommand
 git checkout -b branchname
 
@@ -111,3 +114,4 @@ git merge branchname --no-ff meaning that along witb last commit of branchname a
 lets say we r in main branch
 git merge using recursive strategy:
 git merge branchname -m "message" meaning that recursively merge happens with changes commkted in main and new branch 
+automatically the merge commit happens with commit message
