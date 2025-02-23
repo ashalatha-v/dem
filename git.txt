@@ -1,4 +1,4 @@
-to create parent directory,with nested folder inside parent directory we use below command,
+to create parent directory,with nested folder inside parent directory we use,
 mkdir -p parent/child/grandchild folder names
 
 to recursively add multiples files to staging we use,
@@ -127,11 +127,8 @@ adding few more content
 
 REBASING:
 pushing changes made in main to new branch(feature) created from main known as rebase 
-<<<<<<< HEAD
-=======
 
 to stop/abort rebase: git rebase --abort
 to continue the rebase from where it stopped: git rebase --continue
 
-just like merge conflicts we need to resolve rebase conflicts
->>>>>>> fd220e3 (git.txt changes)
+just like merge conflicts we need to resolve rebase conflicts>>>>>>> fd220e3 (git.txt changes)
