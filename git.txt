@@ -1,4 +1,4 @@
-to create parent directory,with nested folder inside parent directory we use,
+to create parent directory,with nested folder inside parent directory we use below,
 mkdir -p parent/child/grandchild folder names
 
 to recursively add multiples files to staging we use,
