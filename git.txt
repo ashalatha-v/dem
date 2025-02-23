@@ -127,3 +127,11 @@ adding few more content
 
 REBASING:
 pushing changes made in main to new branch(feature) created from main known as rebase 
+<<<<<<< HEAD
+=======
+
+to stop/abort rebase: git rebase --abort
+to continue the rebase from where it stopped: git rebase --continue
+
+just like merge conflicts we need to resolve rebase conflicts
+>>>>>>> fd220e3 (git.txt changes)
