@@ -131,4 +131,36 @@ pushing changes made in main to new branch(feature) created from main known as r
 to stop/abort rebase: git rebase --abort
 to continue the rebase from where it stopped: git rebase --continue
 
-just like merge conflicts we need to resolve rebase conflicts>>>>>>> fd220e3 (git.txt changes)
+just like merge conflicts we need to resolve rebase conflicts
+
+pull with rebase:
+when locally changes are made in main branch and later we stage and commit them
+again some other developer have made changes to main in github.if we need to just see what changes are in github main,
+we use git fetch origin main doesnt perform merge unlike git pull.
+later to pull and rebase main,we use
+git pull --rebase origin main
+
+command to check if both local and remote changes are there.
+git log --oneline --graph --decorate
+
+When to Use git fetch:
+When you want to see what changes have been made in the remote repository without affecting your current work.
+
+Before making a git pull to see the incoming changes.
+
+To update your tracking branches.
+
+Command	               Action	                                                            Result
+git pull	         Fetches and merges changes	                        May create merge commits
+git pull --rebase	Fetches and rebases changes      	         Linear commit history, no merge commits
+git fetch	        Fetches changes only                    	         No changes to current branch, safe inspection
+git rebase	       Reapplies commits on top of another base commit	      Linear commit history, possible conflicts to resolve
+
+git pull: When you want to quickly update your local branch with remote changes and don't mind having merge commits.
+
+git pull --rebase: When you prefer a clean, linear commit history and are comfortable handling potential conflicts.
+
+git fetch: When you want to see what changes are available in the remote repository before deciding to merge or rebase.
+
+git rebase: When you want to keep your feature branch up to date with the main branch without creating merge commits.
+
