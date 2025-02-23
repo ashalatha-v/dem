@@ -164,3 +164,10 @@ git fetch: When you want to see what changes are available in the remote reposit
 
 git rebase: When you want to keep your feature branch up to date with the main branch without creating merge commits.
 
+stashing
+-- if we r working on fe changes,but not complted and need to move on working on some other feature we use, which has not be staged and commited into local repo.
+git stash which automatically intern use save
+--if we again have to go back to stashed file use,
+git stash apply--which puts back staged files into yet to staged and commited
+
+
