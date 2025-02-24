@@ -177,3 +177,6 @@ to list stashed files---git stash list
 
 git stash -u  --- to stash untracked files.
 
+git stash apply-to get back stashed files into working directory and git stash drop-- to drop last stashed file 
+but we can do it together in git stash pop---brings back the stashed files and also pop last stash
+
