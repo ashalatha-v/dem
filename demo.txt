@@ -1,2 +1,2 @@
 "demo"
-"first file created for stash purpose"
+"first file created for stash purpose only."

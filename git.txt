@@ -180,3 +180,26 @@ git stash -u  --- to stash untracked files.
 git stash apply-to get back stashed files into working directory and git stash drop-- to drop last stashed file 
 but we can do it together in git stash pop---brings back the stashed files and also pop last stash
 
+multiple stashing:
+
+saving each file in seperate stash refernce can be done by giving the message,
+git stash save "message"
+in stash recent stash will be at stash@{0} not at stash@{1}
+ex: vi stash1.txt--- git stash save " mesage" in stash@{0}
+    vi stash2.txt--- git stash save "mesage" now stash2.txt in stash@{0} and stash1.txt will be in stash@{1}
+
+---to view individual stash
+git status show stashnameie stash@{0,1,..n}
+
+---to get back a particular file from multiple files,use
+git stash apply stashnameie stash@{0,1,....n} 
+
+---to drop particular stashed file,use
+git stash drop stashname ie stash@{0,1,....n}
+
+
+---to empty list of stashes,use
+git stash clear
+
+----to stash the list of files to new branch we use,
+git stash branch branchname
